@@ -6,7 +6,7 @@ const cheerio = require('cheerio');
 const client = new Client({
   authStrategy: new LocalAuth()
 });
-const newsApiUrl = 'http://20.203.148.130:8000/';
+const newsApiUrl = 'https://www.helakuru.lk/esana/news/';
 
 client.on('qr', (qr) => {
     qrcode.generate(qr, { small: true });
